@@ -20,7 +20,7 @@
   <meta content="my BLOG" name="apple-mobile-web-app-title">
   <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
   <meta content="telephone=no" name="format-detection">
-  <link rel="preload" href="/css/style.css?time=1637766592664" as="style">
+  <link rel="preload" href="/css/style.css?time=1637927672326" as="style">
   <link rel="preload" href="https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts@20.5.30/Dosis/Dosis-Medium.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts@20.5.30/Dosis/Dosis-Medium.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
@@ -784,6 +784,152 @@ button {
     opacity: 1;
     -webkit-opacity: 1;
     -moz-opacity: 1;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-mode: 'dark';
+  }
+  :root:not([color-scheme]) {
+    --color-site-body: #000;
+    --color-read-bkg: #222;
+    --color-read-post: #333;
+    --color-site-bg: #222;
+    --color-site-inner: #eee;
+    --color-site-footer: #aaa;
+    --color-card: #333;
+    --color-text: #eee;
+    --color-block: #3a3a3a;
+    --color-codeblock: #343a3c;
+    --color-inlinecode: #d56d28;
+    --color-h1: #eee;
+    --color-h2: #eee;
+    --color-h3: #ddd;
+    --color-h4: #ddd;
+    --color-h5: #ddd;
+    --color-h6: #ddd;
+    --color-p: #bbb;
+    --color-list: #aaa;
+    --color-list-hl: #69dfc4;
+    --color-meta: #888;
+    --color-link: #888;
+  }
+  :root:not([color-scheme]) img {
+    filter: brightness(70%) !important;
+  }
+  :root:not([color-scheme]) #wrapper .title {
+    color: var(--color-meta) !important;
+  }
+  :root:not([color-scheme]) .l_header ul.nav-list-h>li>a,
+  :root:not([color-scheme]) ul.list-v >li>a {
+    color: var(--color-list) !important;
+  }
+  :root:not([color-scheme]) .blur {
+    background: var(--color-site-bg) !important;
+  }
+  :root:not([color-scheme]) .nav-main .u-search-input {
+    background: var(--color-card) !important;
+  }
+  :root:not([color-scheme]) #l_main .article .prev-next>a {
+    background: var(--color-block) !important;
+  }
+  :root:not([color-scheme]) #l_main .article .prev-next>a:hover {
+    background: var(--color-card) !important;
+  }
+  :root:not([color-scheme]) .article blockquote {
+    background: var(--color-block) !important;
+  }
+  :root:not([color-scheme]) .article-title a {
+    color: var(--color-h1) !important;
+  }
+  :root:not([color-scheme]) details>summary {
+    color: var(--color-p) !important;
+    background: var(--color-site-bg) !important;
+  }
+  :root:not([color-scheme]) details {
+    border: 1px solid var(--color-site-bg) !important;
+    background: var(--color-site-bg) !important;
+  }
+  :root:not([color-scheme]) #u-search .modal,
+  :root:not([color-scheme]) #u-search .modal-header,
+  :root:not([color-scheme]) #u-search .modal-body {
+    background: var(--color-card) !important;
+  }
+  :root:not([color-scheme]) #u-search .modal-body .modal-results .result:hover {
+    background: var(--color-block) !important;
+  }
+}
+[color-scheme='dark'] {
+  --color-site-body: #000;
+  --color-read-bkg: #222;
+  --color-read-post: #333;
+  --color-site-bg: #222;
+  --color-site-inner: #eee;
+  --color-site-footer: #aaa;
+  --color-card: #333;
+  --color-text: #eee;
+  --color-block: #3a3a3a;
+  --color-codeblock: #343a3c;
+  --color-inlinecode: #d56d28;
+  --color-h1: #eee;
+  --color-h2: #eee;
+  --color-h3: #ddd;
+  --color-h4: #ddd;
+  --color-h5: #ddd;
+  --color-h6: #ddd;
+  --color-p: #bbb;
+  --color-list: #aaa;
+  --color-list-hl: #69dfc4;
+  --color-meta: #888;
+  --color-link: #888;
+}
+[color-scheme='dark'] img {
+  filter: brightness(70%) !important;
+}
+[color-scheme='dark'] #wrapper .title {
+  color: var(--color-meta) !important;
+}
+[color-scheme='dark'] .l_header ul.nav-list-h>li>a,
+[color-scheme='dark'] ul.list-v >li>a {
+  color: var(--color-list) !important;
+}
+[color-scheme='dark'] .blur {
+  background: var(--color-site-bg) !important;
+}
+[color-scheme='dark'] .nav-main .u-search-input {
+  background: var(--color-card) !important;
+}
+[color-scheme='dark'] #l_main .article .prev-next>a {
+  background: var(--color-block) !important;
+}
+[color-scheme='dark'] #l_main .article .prev-next>a:hover {
+  background: var(--color-card) !important;
+}
+[color-scheme='dark'] .article blockquote {
+  background: var(--color-block) !important;
+}
+[color-scheme='dark'] .article-title a {
+  color: var(--color-h1) !important;
+}
+[color-scheme='dark'] details>summary {
+  color: var(--color-p) !important;
+  background: var(--color-site-bg) !important;
+}
+[color-scheme='dark'] details {
+  border: 1px solid var(--color-site-bg) !important;
+  background: var(--color-site-bg) !important;
+}
+[color-scheme='dark'] #u-search .modal,
+[color-scheme='dark'] #u-search .modal-header,
+[color-scheme='dark'] #u-search .modal-body {
+  background: var(--color-card) !important;
+}
+[color-scheme='dark'] #u-search .modal-body .modal-results .result:hover {
+  background: var(--color-block) !important;
+}
+@media screen and (max-width: 500px) {
+  [color-scheme='dark'] .l_header .m_search {
+    background: var(--color-site-bg) !important;
   }
 }
 @font-face {
@@ -1622,10 +1768,21 @@ ul.list-v >li>a:hover {
     padding: 0px;
   }
 }
+@media screen and (prefers-color-scheme: dark) and (max-width: 500px) {
+  .l_header .m_search {
+    background: var(--color-site-bg) !important;
+  }
+}
 
   </style>
-  <link rel="stylesheet" href="/css/style.css?time=1637766592664" media="print" onload="this.media='all';this.onload=null">
-  <noscript><link rel="stylesheet" href="/css/style.css?time=1637766592664"></noscript>
+  <link rel="stylesheet" href="/css/style.css?time=1637927672326" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.css?time=1637927672326"></noscript>
+    <script>
+      var userColorScheme=localStorage.getItem("color-scheme")
+      if(userColorScheme){
+        document.documentElement.setAttribute("color-scheme", userColorScheme);
+      }
+    </script>
   
 <script>
 if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMode))
@@ -1845,6 +2002,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   // volantis.dark.mode 当前模式 dark or light
   // volantis.dark.toggle() 暗黑模式触发器
   // volantis.dark.push(callBack[,"callBackName"]) 传入触发器回调函数
+
   volantis.dark = {};
   volantis.dark.method = {
     toggle: new RunItem(),
@@ -1853,6 +2011,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     ...volantis.dark,
     push: volantis.dark.method.toggle.push,
   };
+
+
   /********************  Message  ********************************/
   // /layout/_plugins/message/script.ejs
   // volantis.message
@@ -2098,11 +2258,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover" 
-                href="/examples/" title="时间轴"
+                href="/archives/" title="时间轴"
                   
                   
                   
-                    active-action="action-examples"
+                    active-action="action-archives"
                   >
                   <i class='fad fa-play-circle faa-tada fa-fw'></i>时间轴
                 </a>
@@ -2115,100 +2275,30 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover" 
-                href="/faqs/" title="帮助"
+                href="/friends/" title="友链"
                   
                   
                   
-                    active-action="action-faqs"
-                  >
-                  <i class='fad fa-question-circle faa-tada fa-fw'></i>帮助
-                </a>
-                
-              </li>
-            
-          
-          
-            
-            
-              <li>
-                <a class="menuitem flat-box faa-parent animated-hover" 
-                 href="/" onclick="return false;" title="动态"
-                  
-                  
-                  >
-                  <i class='fad fa-heart fa-fw'></i>动态
-                </a>
-                
-                  <ul class="list-v">
-                    
-                      
-            
-              <li>
-                <a class="menuitem flat-box faa-parent animated-hover" 
-                href="/" title="闲谈"
-                  
-                  
-                  
-                    active-action="action-home"
-                  >
-                  <i class='fas fa-moon fa-fw'></i>闲谈
-                </a>
-                
-              </li>
-            
-          
-                    
-                      
-            
-              <li>
-                <a class="menuitem flat-box faa-parent animated-hover" 
-                href="/" title="游戏"
-                  
-                  
-                  
-                    active-action="action-home"
-                  >
-                  <i class='fas fa-moon fa-fw'></i>游戏
-                </a>
-                
-              </li>
-            
-          
-                    
-                      
-            
-              <li>
-                <a class="menuitem flat-box faa-parent animated-hover" 
-                href="/" title="美好时光"
-                  
-                  
-                  
-                    active-action="action-home"
-                  >
-                  <i class='fas fa-moon fa-fw'></i>美好时光
-                </a>
-                
-              </li>
-            
-          
-                    
-                  </ul>
-                
-              </li>
-            
-          
-          
-            
-            
-              <li>
-                <a class="menuitem flat-box faa-parent animated-hover" 
-                href="/" title="友链"
-                  
-                  
-                  
-                    active-action="action-home"
+                    active-action="action-friends"
                   >
                   <i class='fad fa-heart fa-fw'></i>友链
+                </a>
+                
+              </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" 
+                href="/about/" title="关于"
+                  
+                  
+                  
+                    active-action="action-about"
+                  >
+                  <i class='fad fa-question-circle faa-tada fa-fw'></i>关于
                 </a>
                 
               </li>
@@ -2365,11 +2455,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover" 
-                href="/examples/" title="时间轴"
+                href="/archives/" title="时间轴"
                   
                   
                   
-                    active-action="action-examples"
+                    active-action="action-archives"
                   >
                   <i class='fad fa-play-circle faa-tada fa-fw'></i>时间轴
                 </a>
@@ -2382,100 +2472,30 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover" 
-                href="/faqs/" title="帮助"
+                href="/friends/" title="友链"
                   
                   
                   
-                    active-action="action-faqs"
-                  >
-                  <i class='fad fa-question-circle faa-tada fa-fw'></i>帮助
-                </a>
-                
-              </li>
-            
-          
-            
-              
-            
-              <li>
-                <a class="menuitem flat-box faa-parent animated-hover" 
-                 href="/" onclick="return false;" title="动态"
-                  
-                  
-                  >
-                  <i class='fad fa-heart fa-fw'></i>动态
-                </a>
-                
-                  <ul class="list-v">
-                    
-                      
-            
-              <li>
-                <a class="menuitem flat-box faa-parent animated-hover" 
-                href="/" title="闲谈"
-                  
-                  
-                  
-                    active-action="action-home"
-                  >
-                  <i class='fas fa-moon fa-fw'></i>闲谈
-                </a>
-                
-              </li>
-            
-          
-                    
-                      
-            
-              <li>
-                <a class="menuitem flat-box faa-parent animated-hover" 
-                href="/" title="游戏"
-                  
-                  
-                  
-                    active-action="action-home"
-                  >
-                  <i class='fas fa-moon fa-fw'></i>游戏
-                </a>
-                
-              </li>
-            
-          
-                    
-                      
-            
-              <li>
-                <a class="menuitem flat-box faa-parent animated-hover" 
-                href="/" title="美好时光"
-                  
-                  
-                  
-                    active-action="action-home"
-                  >
-                  <i class='fas fa-moon fa-fw'></i>美好时光
-                </a>
-                
-              </li>
-            
-          
-                    
-                  </ul>
-                
-              </li>
-            
-          
-            
-              
-            
-              <li>
-                <a class="menuitem flat-box faa-parent animated-hover" 
-                href="/" title="友链"
-                  
-                  
-                  
-                    active-action="action-home"
+                    active-action="action-friends"
                   >
                   <i class='fad fa-heart fa-fw'></i>友链
+                </a>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" 
+                href="/about/" title="关于"
+                  
+                  
+                  
+                    active-action="action-about"
+                  >
+                  <i class='fad fa-question-circle faa-tada fa-fw'></i>关于
                 </a>
                 
               </li>
@@ -2641,20 +2661,20 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               <img src='https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f5c3.svg' alt="This is a picture without description" ><p>时间轴</p>
             </a>
           
-            <a href="/archives/"
+            <a href="/v4/getting-started/"
               
               
                 target="_self"
               
-              active-action="action-archives">
+              active-action="action-v4getting-started">
               <img src='https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f516.svg' alt="This is a picture without description" ><p>文档</p>
             </a>
           
-            <a href="/contributors/"
+            <a href="/friends/"
               
               
-              active-action="action-contributors">
-              <img src='https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f497.svg' alt="This is a picture without description" ><p>动态</p>
+              active-action="action-friends">
+              <img src='https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f497.svg' alt="This is a picture without description" ><p>友链</p>
             </a>
           
             <a href="/faqs/"
@@ -2717,7 +2737,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
       
         <a class='avatar flat-box rectangle' href='/about/'>
-          <img no-lazy src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png' alt="This is a picture without description" />
+          <img no-lazy src='https://cdn.jsdelivr.net/gh/powehiYU/powehiYU.github.io@1.0/head.jpg' alt="This is a picture without description" />
         </a>
       
     
@@ -2735,7 +2755,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div class="social-wrapper">
         
           
-            <a href="/atom.xml"
+            <a href="https://user.qzone.qq.com/914720658/main"
               class="social fas fa-rss flat-btn"
               target="_blank"
               rel="external nofollow noopener noreferrer">
@@ -2744,16 +2764,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
         
           
-            <a href="mailto:me@xxx.com"
-              class="social fas fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/volantis-x/"
+            <a href="https://github.com/powehiYU"
               class="social fab fa-github flat-btn"
               target="_blank"
               rel="external nofollow noopener noreferrer">
@@ -2838,8 +2849,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="webinfo-item">
           <div>最后活动时间：</div>
           
-            <div id="last-update" style="display: none;">Wed Nov 24 2021 23:09:52 GMT+0800 (GMT+08:00)</div>
-            <div id="last-update-show">2021-11-24 日</div>
+            <div id="last-update" style="display: none;">Fri Nov 26 2021 19:54:32 GMT+0800 (GMT+08:00)</div>
+            <div id="last-update-show">2021-11-26 日</div>
           
         </div>
         
@@ -2889,7 +2900,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           try {
             document.getElementById('last-update-show').innerHTML = timeago(new Date(lastUpDate));
           } catch (error) {
-            document.getElementById('last-update-show').innerHTML = '2021-11-24 日';
+            document.getElementById('last-update-show').innerHTML = '2021-11-26 日';
           }
         </script>
         
@@ -2943,30 +2954,22 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
     
-
   
 
-  
+  <section class="widget tagcloud shadow desktop mobile pjax">
     
+  <header>
     
+      <a href='/blog/tags/'><i class="fas fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
+    
+  </header>
 
-<section class="widget qrcode shadow desktop mobile pjax">
-  
 
-  <div class='content article-entry'>
-    
-      <img src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png'
-      
-        height='64px'
-      />
-    
-      <img src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png'
-      
-        height='64px'
-      />
-    
-  </div>
-</section>
+    <div class='content'>
+      <a href="/tags/%E9%97%B2%E8%B0%88/" style="font-size: 14px; color: #999">闲谈</a>
+    </div>
+  </section>
+
 
   
 
@@ -2985,7 +2988,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
  
   <div class='content'> 
-    <ul class="list entry navigation"><li><a class="widget-last" href="/2021/11/23/hello-world/"><div class="item"><time>2021-11-24</time></div><span>Hello World</span></a></li></ul> 
+    <ul class="list entry navigation"><li><a class="widget-last" href="/2021/11/23/hello-world/"><div class="item"><time>2021-11-26</time></div><span>Hello World</span></a></li></ul> 
   </div> 
 </section> 
 
@@ -2993,6 +2996,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
 <!-- 没有 pjax 占位会报错 万恶的 pjax -->
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
 
   <div class="pjax">
     <!-- pjax占位 -->
@@ -3212,8 +3219,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <script>
   volantis.message = (title, message, option = {}, done = null) => {
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1637766592664')
-      volantis.js('/js/message.js?time=1637766592664', () => {
+      volantis.css('/css/message.css?time=1637927672326')
+      volantis.js('/js/message.js?time=1637927672326', () => {
         tozashMessage(title, message, option, done);
       });
     } else {
@@ -3258,8 +3265,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   volantis.question = (title, message, option = {}, success = null, cancel = null, done = null) => {
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1637766592664')
-      volantis.js('/js/message.js?time=1637766592664', () => {
+      volantis.css('/css/message.css?time=1637927672326')
+      volantis.js('/js/message.js?time=1637927672326', () => {
         tozashQuestion(title, message, option, success, cancel, done);
       });
     } else {
@@ -3318,8 +3325,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     }
     
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1637766592664')
-      volantis.js('/js/message.js?time=1637766592664', () => {
+      volantis.css('/css/message.css?time=1637927672326')
+      volantis.js('/js/message.js?time=1637927672326', () => {
         hideMessage(done);
       });
     } else {
@@ -3505,12 +3512,111 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
     
-    volantis.js('/js/rightMenu.js?time=1637766592664')
+    volantis.js('/js/rightMenu.js?time=1637927672326')
   </script>
 
 
 
 <!-- rightmenu要在darkmode之前（ToggleButton） darkmode要在comments之前（volantis.dark.push）-->
+
+  <script>
+const rootElement = document.documentElement;
+const darkModeStorageKey = "color-scheme";
+const rootElementDarkModeAttributeName = "color-scheme";
+const setLS = (k, v) => {
+    localStorage.setItem(k, v);
+};
+const removeLS = (k) => {
+    localStorage.removeItem(k);
+};
+const getLS = (k) => {
+    return localStorage.getItem(k);
+};
+const getModeFromCSSMediaQuery = () => {
+  return window.matchMedia("(prefers-color-scheme: dark)").matches
+    ? "dark"
+    : "light";
+};
+const resetRootDarkModeAttributeAndLS = () => {
+  rootElement.removeAttribute(rootElementDarkModeAttributeName);
+  removeLS(darkModeStorageKey);
+};
+const validColorModeKeys = {
+  dark: true,
+  light: true,
+};
+const applyCustomDarkModeSettings = (mode) => {
+  const currentSetting = mode || getLS(darkModeStorageKey);
+  getCustomDarkMode();
+  if (currentSetting === getModeFromCSSMediaQuery()) {
+    resetRootDarkModeAttributeAndLS();
+  } else if (validColorModeKeys[currentSetting]) {
+    rootElement.setAttribute(rootElementDarkModeAttributeName, currentSetting);
+  } else {
+    resetRootDarkModeAttributeAndLS();
+  }
+};
+const invertDarkModeObj = {
+  dark: "light",
+  light: "dark",
+};
+/**
+ * get target mode
+ */
+ const getCustomDarkMode = () => {
+  let currentSetting = getLS(darkModeStorageKey);
+  if (validColorModeKeys[currentSetting]) {
+    currentSetting = invertDarkModeObj[currentSetting];
+  } else if (currentSetting === null) {
+    currentSetting = invertDarkModeObj[getModeFromCSSMediaQuery()];
+  } else {
+    return;
+  }
+  if(currentSetting=="dark"){
+    volantis.dark.mode="light";
+  }else{
+    volantis.dark.mode="dark";
+  }
+  // console.log(volantis.dark.mode)
+};
+const toggleCustomDarkMode = () => {
+  let currentSetting = getLS(darkModeStorageKey);
+  if (validColorModeKeys[currentSetting]) {
+    currentSetting = invertDarkModeObj[currentSetting];
+  } else if (currentSetting === null) {
+    currentSetting = invertDarkModeObj[getModeFromCSSMediaQuery()];
+  } else {
+    return;
+  }
+  setLS(darkModeStorageKey, currentSetting);
+  return currentSetting;
+};
+/**
+ * 暗黑模式触发器
+ */
+volantis.dark.toggle=()=>{
+  const mode = toggleCustomDarkMode();
+  applyCustomDarkModeSettings(mode);
+  // 使用 volantis.dark.push 方法传入volantis.dark.toggle回调函数 参见layout/_partial/scripts/global.ejs
+  volantis.dark.method.toggle.start();
+}
+/**
+ * bind event for toggle button
+ */
+
+function bindToggleButton() {
+  var btn= document.querySelectorAll("#wrapper .toggle-mode-btn,#rightmenu-wrapper .toggle-mode-btn")
+  btn.forEach(function (e) {
+    volantis.dom.$(e).on('click',volantis.dark.toggle);
+  })
+}
+applyCustomDarkModeSettings();
+document.addEventListener("DOMContentLoaded", ()=>{
+  volantis.requestAnimationFrame(bindToggleButton)
+});
+volantis.pjax.push(bindToggleButton);
+</script>
+
 
 
 
@@ -3519,19 +3625,19 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("/js/plugins/sites.js?time=1637766592664")
+        volantis.js("/js/plugins/sites.js?time=1637927672326")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("/js/plugins/friends.js?time=1637766592664")
+        volantis.js("/js/plugins/friends.js?time=1637927672326")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("/js/plugins/contributors.js?time=1637766592664")
+        volantis.js("/js/plugins/contributors.js?time=1637927672326")
       }
     
   };
@@ -3603,7 +3709,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     await volantis.js("https://cdn.jsdelivr.net/npm/meting@2.0/dist/Meting.min.js")
   
     // 右键 music 需要在 APlayer  MetingJS 之后加载
-    await volantis.js('/js/aplayer.js?time=1637766592666')
+    await volantis.js('/js/aplayer.js?time=1637927672328')
     volantis.APlayerController.music = true;
   
   })();
@@ -3685,41 +3791,45 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
   <script>
-  volantis.layoutHelper("comments",`<div id="utterances"></div>`)
-  volantis.utterances={}
-  volantis.utterances.ThemeLight='github-light';
-  volantis.utterances.ThemeDark='github-dark';
-  volantis.utterances.Theme=volantis.utterances.ThemeLight;
-  function pjax_utterances(){
-    if(!document.getElementById("utterances"))return;
-    
-    setTimeout(function() {
-      var checkUtterances = setInterval(function () {
-        var HEAD = document.getElementById("utterances");
-        if (!HEAD) return
-        clearInterval(checkUtterances)
-        try {
-          document.getElementById("utterances").innerHTML="";
-        } catch (error) {}
-        var script = document.createElement('script');
-        script.setAttribute('src','https://utteranc.es/client.js');
-        script.setAttribute('repo','volantis-x/community');
-        let issuenumber = '115';
-        if (issuenumber) {
-          script.setAttribute('issue-number', issuenumber);
-        } else {
-          script.setAttribute('issue-term', 'pathname');
-        }
-        script.setAttribute('theme', volantis.utterances.Theme );
-        script.setAttribute('label','✨💬✨');
-        script.setAttribute('crossorigin', "anonymous");
-        HEAD.appendChild(script);
-      }, 200)
-    });
+  volantis.layoutHelper("comments",`<div id="valine_container"><i class="fas fa-cog fa-spin fa-fw fa-2x"></i></div>`)
+  function emoji(path, idx, ext) {
+    return path + "/" + path + "-" + idx + "." + ext;
   }
-  pjax_utterances();
-  volantis.pjax.push(pjax_utterances);
-  volantis.dark.push(pjax_utterances);
+  var emojiMaps = {};
+  for (var i = 1; i <= 54; i++) {
+    emojiMaps['tieba-' + i] = emoji('tieba', i, 'png');
+  }
+  for (var i = 1; i <= 101; i++) {
+    emojiMaps['qq-' + i] = emoji('qq', i, 'gif');
+  }
+  for (var i = 1; i <= 116; i++) {
+    emojiMaps['aru-' + i] = emoji('aru', i, 'gif');
+  }
+  for (var i = 1; i <= 125; i++) {
+    emojiMaps['twemoji-' + i] = emoji('twemoji', i, 'png');
+  }
+  for (var i = 1; i <= 4; i++) {
+    emojiMaps['weibo-' + i] = emoji('weibo', i, 'png');
+  }
+  function pjax_valine() {
+    if(!document.querySelectorAll("#valine_container")[0])return;
+    let pagePlaceholder = pdata.commentPlaceholder || "快来评论吧~✨💬✨";
+    let path = pdata.commentPath;
+    if (path.length == 0) {
+      let defaultPath = '/';
+      path = defaultPath || decodeURI(window.location.pathname);
+    }
+    var valine = new Valine();
+    valine.init(Object.assign(Object.assign({"path":"/","placeholder":"快来评论吧~✨💬✨","appId":"QaKTzSCpmvOOpPcv0qrKETyA-gzGzoHsz","appKey":"uXrPsq2MvIi8VzSYbCi4ISV2","meta":["nick","mail","link"],"requiredFields":["nick","mail"],"enableQQ":true,"recordIP":false,"avatar":"retro","pageSize":10,"lang":"zh-cn","highlight":true,"mathJax":false}, {
+      el: '#valine_container',
+      path: path,
+      placeholder: pagePlaceholder,
+      emojiCDN: 'https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/valine/',
+      emojiMaps: emojiMaps,
+    }),pdata.commentConfig))
+  }
+  volantis.js('/js/valine.js?time=1637927672326').then(pjax_valine)
+  volantis.pjax.push(pjax_valine);
 </script>
 
 
@@ -3727,7 +3837,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
 
-<script src="/js/app.js?time=1637766592664.js"></script>
+<script src="/js/app.js?time=1637927672326.js"></script>
 
 
 <!-- optional -->
@@ -3740,7 +3850,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("/js/search/hexo.js?time=1637766592664");
+    return volantis.js("/js/search/hexo.js?time=1637927672326");
   }
 
   function loadSearchService() {
@@ -4014,7 +4124,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
   <script>
-  let imgs = ["https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/056.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/035.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/019.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/001.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/003.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/006.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/012.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/034.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/054.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/042.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/039.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/016.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/002.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/005.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/038.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/004.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/033.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/051.webp"];
+  let imgs = ["https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/042.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/033.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/016.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/035.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/005.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/002.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/006.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/019.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/034.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/012.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/003.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/004.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/051.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/056.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/001.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/038.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/039.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/054.webp"];
   let index = 0;
   let IntervalParallax = null;
 
@@ -4057,7 +4167,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   var runningOnBrowser = typeof window !== "undefined";
   var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
   if (!isBot) {
-    volantis.js('/js/parallax.js?time=1637766592664').then(()=>{
+    volantis.js('/js/parallax.js?time=1637927672326').then(()=>{
       parallax()
     })
     volantis.pjax.send(()=>{

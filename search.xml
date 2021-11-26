@@ -8,9 +8,15 @@
       <link href="/2021/11/23/hello-world/"/>
       <url>/2021/11/23/hello-world/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.<a href="https://hexo.io/docs/one-command-deployment.html">https://hexo.io/docs/one-command-deployment.html</a>)</p>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><div class="timeline"><p class='p h2'>动态</p><div class="timenode"><div class="meta"><p><p>2021.11.26</p></p></div><div class="body"><p>欢迎来到这个博客。</p><br><br><p>人是闲不下来的，总想捣鼓点东西，于是建一个博客的想法就产生了。刚好这有一个闲置的域名，我就想着用hexo搭建一个，然后把它弄到github上。</p><p>建造过程确实比我想象的难不少，中间卡壳了很多次，但靠着以往CV的功夫还是能一个个解决。最终完成了现在的简单的博客。</p><p>结果是好的，纷纷扰扰的网络有了我自己的一块地方，我以后会在这个地方写一些学习中接触到的值得记录的东西。这个博客也会从简单变得充实。</p><br><br><p>谢谢你的来访</p></div></div></div>]]></content>
       
       
+      
+        <tags>
+            
+            <tag> 闲谈 </tag>
+            
+        </tags>
       
     </entry>
     
